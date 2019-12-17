@@ -15,8 +15,30 @@
                 <div id="main" class="card">
                     <!--CARD CONTENT-->
                     <div class="card-content">
-                        <div class="card-title">Task List</div>
-                        <div class="row"></div>
+                        <span class="card-title">Task List</span>
+                        <div class="row">
+                            <form id="task-form">
+                                <div class="input-field col s12">
+                                    <input type="text" name="task" id="task">
+                                    <label for="task">New Task</label>
+                                </div>
+                                <input type="submit" value="Add Task" class="btn">
+                            </form>
+                        </div>
+                    </div>
+
+                    <!--Card Action - Filter and List-->
+                    <div class="card-action">
+                        <h5 id="task-title">Tasks</h5>
+                        <div class="input-field col s12">
+                            <input type="text" name="filter" id="filter">
+                            <label for="filter">Filter Tasks</label>
+                        </div>
+                        <ul class="collection">
+
+                        </ul>
+                            <a href="#" class="clear-tasks btn black">Clear Tasks</a>
+                        </ul>
                     </div>
                 </div>
             </div>
